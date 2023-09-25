@@ -163,8 +163,8 @@ public class Test {
             System.out.println("El numero cero no fue encontrado y ya excediste "
                     + "los intentos");
         }
-        
-        
+         */
+ /*
         // Ejercicio 10 - for
         Scanner leer = new Scanner(System.in);
         int num;
@@ -180,7 +180,8 @@ public class Test {
             }
             System.out.println("");
         }
-         
+        
+        /*
         // Ejercicio 11 - Procedimientos
         System.out.println("ingrese una frase");
         Scanner leer = new Scanner(System.in);
@@ -190,43 +191,70 @@ public class Test {
         SecuenciaCaracter(frase);
         
         
-    }
-    
-    public static void SecuenciaCaracter(String frase) {
-        
-        int longitud;
-        longitud = frase.length();
-        String letra;
-       
-        for (int i = 0; i < longitud; i++) {
-            letra = frase.substring(i, i + 1);
-            
-            switch (letra.toLowerCase()) {
-                case "a":
-                    letra = "@";
-                    break;
-                case "e":
-                    letra = "#";
-                    break;
-                case "i":
-                    letra = "$";
-                    break;
-                case "o":
-                    letra = "%";
-                    break;
-                case "u":
-                    letra = "*";
-                    break;
-               
-            }
-            System.out.print(letra);
         }
-        System.out.println("");
-        
-        
-        // Ejercicio 13 - vector
-        String[] vector = new String[4];
-        */
+
+        public static void SecuenciaCaracter(String frase) {
+
+            int longitud;
+            longitud = frase.length();
+            String letra;
+
+            for (int i = 0; i < longitud; i++) {
+                letra = frase.substring(i, i + 1);
+
+                switch (letra.toLowerCase()) {
+                    case "a":
+                        letra = "@";
+                        break;
+                    case "e":
+                        letra = "#";
+                        break;
+                    case "i":
+                        letra = "$";
+                        break;
+                    case "o":
+                        letra = "%";
+                        break;
+                    case "u":
+                        letra = "*";
+                        break;
+
+                }
+                System.out.print(letra);
+            }
+            System.out.println("");
+
+
+            // Ejercicio 13 - vector
+            String[] vector = new String[4];
+         */
+ /*
+        int ncontador = 0;
+        Scanner leernumero = new Scanner(System.in);
+        int numeroLeido;
+        int suma = 0;
+
+        do {
+            System.out.println("Ingresa un numero");
+            numeroLeido = leernumero.nextInt();
+            ncontador++;
+
+            if (numeroLeido > 0) {
+                suma += numeroLeido;
+            }
+
+            if (numeroLeido == 0) {
+                break;
+            }
+
+        } while (ncontador <= 20);
+
+        if (numeroLeido == 0) {
+            System.out.println("Se capturó el numero cero");
+        }
+
+        System.out.println("La sume de los numeros ingresado es " + suma);
+         */
     }
 
 }
